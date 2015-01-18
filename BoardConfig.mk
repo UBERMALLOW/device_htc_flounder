@@ -128,3 +128,8 @@ MALLOC_IMPL := dlmalloc
 
 # Use the non-open-source parts, if they're present
 -include vendor/htc/flounder/BoardConfigVendor.mk
+
+# Inline kernel building
+TARGET_KERNEL_CONFIG := flounder_defconfig
+TARGET_KERNEL_SOURCE := kernel/htc/flounder
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
